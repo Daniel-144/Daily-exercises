@@ -7,14 +7,14 @@ try:
     myDict={}
     # initialize a empty list to store the words.
     wortdsWithoutAinBetween=[]
-    inputPassage=open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\internship\\Day 3\\passage.txt','r')
-    passage=inputPassage.read()
+    with open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\Daily-exercises\\Day 3\\passage.txt','r') as file:
+        passage=file.read()
     passage=passage.split()
     for words in passage:
         if len(words)==4 and words not in myDict:
             count=passage.count(words)
             myDict[words]=count
-    with open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\internship\\Day 3\\passage.txt','w') as file:
+    with open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\Daily-exercises\\Day 3\\passage.txt','a') as file:
         file.write("\nSUMMARY OF 4 LETTER WORDS\n")
         for key,occurances in myDict.items():
             file.write(f"{key}:{occurances}\n")

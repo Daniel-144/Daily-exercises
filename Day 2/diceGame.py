@@ -9,7 +9,7 @@ import random
 # function to calculate the points
 def calculate_points(point):
     while(True):
-        if point > 50:
+        if point >= 50:
             return point
             break
         else:

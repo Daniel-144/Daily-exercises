@@ -43,7 +43,7 @@ try:
                 # Increment count
                 count += 1
                 # append the words in the list.
-                wortdsWithoutAinBetween.append("The "+passage[i])
+                wortdsWithoutAinBetween.append(passage[i])
         except TypeError as e:
             print(f"Error: {e}")
         except:

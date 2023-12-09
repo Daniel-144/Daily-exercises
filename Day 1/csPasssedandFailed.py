@@ -6,7 +6,7 @@ Pass mark is 50.
 Print a new list with all the students with pass marks along with their mark in the format name:mark.
 Also print the number of students who failed.
 """
-StudentName=['messi','sergio ramos','ronaldo','tony kroos','belingham']
+StudentName=['rodrygo','sergio ramos','ronaldo','tony kroos','luka modric']
 StudentMark=[34,56,78,23,90]
 PassMark=50
 failcount=0
@@ -20,7 +20,9 @@ for mark in range(len(StudentMark)):
     else:
         failcount+=1
 
-print(f"pass student's name and markks:{PassList}")
+print(f"pass student's name and markks:")
+for i in PassList:
+    print(i)
 print(f"No of student's failed:{failcount}")
 
 """
