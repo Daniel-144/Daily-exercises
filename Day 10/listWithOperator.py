@@ -46,7 +46,6 @@ def CalculateOP(inputsequence):
             # if it is not the 4 operands it may be a invalid value.
             else:
                 return("the input has invalid characters!!!")
-                break
     return(Oplist[0])
 
 # input sequence.
