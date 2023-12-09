@@ -28,7 +28,7 @@ def CalculateOP(inputsequence):
                 # storing the character which is poped from the list in operand 2
                 operand2=Oplist.pop()
                 # append the difference in the list.
-                Oplist.append(operand1-operand2)
+                Oplist.append(operand2-operand1)
             elif char == "+":
                 # storing the character which is poped from the list in operand 1 
                 operand1=Oplist.pop()
@@ -62,5 +62,5 @@ print(f"Output:{output}")
 Output:15
 
 2)Input: ['10', '2', '3', '+', '-', '5', '*']
-Output:-25
+Output:25
 """
