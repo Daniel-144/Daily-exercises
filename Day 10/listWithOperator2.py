@@ -36,8 +36,9 @@ def CalculateOp(sequence):
 
             
 
-
-inputSequence=["+","1", "2", "*", "5"]
+inputSequence=input("Enter a sequence of mixed expressions example(+ 1 2 * 5):")
+inputSequence=inputSequence.split(" ")
+#inputSequence=["+","1", "2", "*", "5"]
 output=CalculateOp(inputSequence)
 print(f"The output of the sequence is: {output}")
 

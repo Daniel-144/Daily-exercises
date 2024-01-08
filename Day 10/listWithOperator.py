@@ -49,7 +49,9 @@ def CalculateOP(inputsequence):
     return(Oplist[0])
 
 # input sequence.
-inputSequence=["10", "2", "3", "+","-", "5", "*"]
+inputSequence=input("enter a expression with combination of numbers and operatos with spaces:")
+inputSequence=inputSequence.split(" ")
+#inputSequence=["10", "2", "3", "+","-", "5", "*"]
 # calling the function to calculate the output.
 output=CalculateOP(inputSequence)
 print(f"Input: {inputSequence}")

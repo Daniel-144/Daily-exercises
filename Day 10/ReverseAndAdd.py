@@ -26,11 +26,16 @@ def addContents(list1,list2):
         sum=total//10
     if sum > 0:
         result.append(sum)
-    return(result[::-1])
+    return(result)
 
 # sample inputs
-list1=[1,2,3]
-list2=[5,6,7]
+list1=[9,9,9]
+list2=[8,8,8]
 # call the function called add contents
 result=addContents(list1,list2)
-print(result)
+print("The output of the given list is:",result)
+"""
+OP:
+The output of the given list is: [1, 0, 8, 6]
+
+"""
